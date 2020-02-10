@@ -136,7 +136,7 @@ $ matlab -singleCompThread -nodisplay -nosplash -r myscript
 
 In addition to the web interfaces on MyAdroit and MyDella, one can also launch MATLAB with its GUI on Tigressdata. Tigressdata is ideal for data post-processing and visualization. You can access your files on the different filesystems using these paths: `/tiger/scratch/gpfs/<YourNetID>`, `/della/scratch/gpfs/<YourNetID>`, `/perseus/scratch/gpfs/<YourNetID>`, `/tigress` and `/projects`.
 
-Mac users will need to have [XQuartz](https://www.xquartz.org/) installed while Windows users should install [MobaXterm](https://mobaxterm.mobatek.net/download.html) (Home Edition). Visit the the [OIT Tech Clinic](https://princeton.service-now.com/snap/?id=kb_article&sys_id=ea2a27064f9ca20018ddd48e5210c771) for assistance with installing, configuring and using these tools.
+Mac users will need to have [XQuartz](https://www.xquartz.org/) installed while Windows users should install [MobaXterm](https://mobaxterm.mobatek.net/download.html) (Home Edition). Visit the [OIT Tech Clinic](https://princeton.service-now.com/snap/?id=kb_article&sys_id=ea2a27064f9ca20018ddd48e5210c771) for assistance with installing, configuring and using these tools.
 
 To run MATLAB interactively with its graphical user interface:
 
