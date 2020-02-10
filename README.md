@@ -38,7 +38,7 @@ The Slurm script (`job.slurm`) below can be used for serial jobs:
 #SBATCH --mail-user=<YourNetID>@princeton.edu
 
 module purge
-module load matlab/R2019b
+module load matlab/R2019a
 
 matlab -singleCompThread -nodisplay -nosplash -r hello_world
 ```
@@ -109,7 +109,7 @@ The Slurm script (`job.slurm`) below can be used for this case:
 #SBATCH --mail-user=<YourNetID>@princeton.edu
 
 module purge
-module load matlab/R2019b
+module load matlab/R2019a
 
 srun matlab -nodisplay -nosplash -r for_loop
 ```
