@@ -8,6 +8,6 @@
 #SBATCH --gres=gpu:1             # number of gpus per node
 
 module purge
-module load matlab/R2019b
+module load matlab/R2018a
 
 matlab -singleCompThread -nodisplay -nosplash -r svd_matlab
