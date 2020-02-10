@@ -9,6 +9,6 @@
 #SBATCH --mail-user=<YourNetID>@princeton.edu
 
 module purge
-module load matlab/R2019b
+module load matlab/R2019a
 
 matlab -singleCompThread -nodisplay -nosplash -r hello_world
