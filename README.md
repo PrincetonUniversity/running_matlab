@@ -60,7 +60,7 @@ Hello world.
 
 Use `squeue -u $USER` to monitor the progress of queued jobs.
 
-### Choosing a MATLAB version
+### Choosing a MATLAB Version
 
 Run the command below to see the available MATLAB versions. For example, on Della:
 
@@ -116,7 +116,7 @@ srun matlab -nodisplay -nosplash -r for_loop
 
 Note that `-singleCompThread` does not appear in the Slurm script in contrast to the serial case. One must tune the value of `--cpus-per-task` for optimum performance. Use the smallest value that gives you a significant performance boost because the more resources you request the longer your queue time will be.
 
-### How do I know if my MATLAB code is Parallelized?
+### How Do I Know If My MATLAB Code is Parallelized?
 
 There are two common ways to answer this question without knowing anything about the code. The first to is run the code using 1 CPU-core and then do a second run using, say, 4 CPU-cores. Look to see if there is a significant difference in the execution time of the two codes. The second method is to launch the job using, say, 4 CPU-cores then `ssh` to the compute node where the job is running and use `htop -u $USER` to inspect the CPU usage. To get the name of the compute node where your jobs is running use the following command:
 
