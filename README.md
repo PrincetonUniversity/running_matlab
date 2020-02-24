@@ -374,6 +374,10 @@ http://www.princeton.edu/software/licenses/software/matlab/
 
 TigerCPU is reserved for large parallel jobs. MATLAB jobs can only use a single node so they are not allowed to run on TigerCPU. You will either need to run the job on another cluster or if your code can make use of a GPU then TigerGPU can be used.
 
+### 5. I installed MATLAB through the university on my laptop. How do I update the license?
+
+Please see this [SNAP](https://princeton.service-now.com/snap/?id=kb_article&sys_id=7eca80c8db645384249b7b6b8c9619be) page.
+
 ## Getting Help
 
 If you encounter any difficulties while running MATLAB on the HPC clusters then please send
