@@ -118,7 +118,7 @@ Note that `-singleCompThread` does not appear in the Slurm script in contrast to
 
 ### How Do I Know If My MATLAB Code is Parallelized?
 
-A `parfor` statement is a clear indication of a parallelized MATLAB code. However, there are cases when the parallelization is not obvious. One example would be a code that uses linear algebra operations such as matrix decompositions. In this case MATLAB will use the BLAS library which offers multithreaded routines.
+A `parfor` statement is a clear indication of a parallelized MATLAB code. However, there are cases when the parallelization is not obvious. One example would be a code that uses linear algebra operations such as a matrix multiplicaton. In this case MATLAB will use the BLAS library which offers multithreaded routines.
 
 There are two common ways to deteremine whether or not a MATLAB code can take advantage of parallelism without knowing anything about the code. The first to is run the code using 1 CPU-core and then do a second run using, say, 4 CPU-cores. Look to see if there is a significant difference in the execution time of the two codes. The second method is to launch the job using, say, 4 CPU-cores then `ssh` to the compute node where the job is running and use `htop -u $USER` to inspect the CPU usage. To get the name of the compute node where your jobs is running use the following command:
 
