@@ -116,6 +116,22 @@ srun matlab -nodisplay -nosplash -r for_loop
 
 Note that `-singleCompThread` does not appear in the Slurm script in contrast to the serial case. One must tune the value of `--cpus-per-task` for optimum performance. Use the smallest value that gives you a significant performance boost because the more resources you request the longer your queue time will be.
 
+### How do I know if my MATLAB code is Parallelized?
+
+There are two common ways to answer this question without knowing anything about the code. The first to is run the code using 1 CPU-core and then do a second run using, say, 4 CPU-cores. Look to see if there is a significant difference in the execution time of the two codes. The second method is to launch the job using, say, 4 CPU-cores then `ssh` to the compute node where the job is running and use `htop -u $USER` to inspect the CPU usage. To get the name of the compute node where your jobs is running use the following command:
+
+```
+$ squeue -u $USER
+```
+
+The rightmost column labeled "NODELIST(REASON)" gives the name of the node where your job is running. SSH to this node, for example:
+
+```
+$ ssh della-r3c1n14
+```
+
+Once on the compute node, run `htop -u $USER`. If your job is running in parallel you should see a process using much more than 100% in the `%CPU` column. For 4 CPU-cores this number would be ideally be 400%.
+
 ## Running MATLAB on Nobel
 
 The Nobel cluster is a shared system without a job scheduler. Because of this, users are not allowed to run MATLAB in multi-threaded mode. The first step in using MATLAB on Nobel is choosing the version. Run `module avail matlab` to see the choices. Load a module with, e.g., `module load matlab/R2019b`.
