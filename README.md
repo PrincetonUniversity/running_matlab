@@ -1,4 +1,5 @@
-# Running MATLAB on the HPC Clusters
+# # This page is no longer maintained and will be removed. The new page is https://researchcomputing.princeton.edu/matlab
+
 
 This guide presents an overview of running MATLAB on the HPC clusters at Princeton.
 
